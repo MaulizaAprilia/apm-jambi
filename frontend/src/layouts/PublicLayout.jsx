@@ -468,10 +468,10 @@ export default function PublicLayout() {
               </ul>
             </div>
 
-            {/* Column 3: Program Pillars */}
+            {/* Column 3: 9 Bidang Strategis */}
             <div>
               <h3 className="text-white text-sm font-bold uppercase tracking-wider mb-4 border-l-2 border-purple-500 pl-3">
-                Pilar Utama Program
+                9 Bidang Strategis
               </h3>
               <ul className="space-y-2.5 text-xs sm:text-sm text-slate-400">
                 {footerPrograms.map((program) => (

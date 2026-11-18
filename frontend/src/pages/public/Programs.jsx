@@ -15,12 +15,16 @@ import { resolveApiAssetUrl } from '../../services/api';
 import { extractPublicItems, initialPrograms, initialContact } from '../../data/publicContentDefaults';
 
 const categoryFilters = [
-  'Semua Program',
-  'Perlindungan Hukum & Gender',
-  'Edukasi & Kesadaran Hukum',
-  'Kemandirian Ekonomi',
-  'Kesehatan Reproduksi',
-  'Advokasi & Kebijakan',
+  'Semua Bidang',
+  'Perlindungan Hukum & GEDSI',
+  'Kesadaran Hukum & Advokasi',
+  'Pengorganisasian & Kepemimpinan',
+  'Pendidikan Kritis GEDSI',
+  'Advokasi Kebijakan & GEDSI',
+  'Kemandirian Ekonomi & CU',
+  'Kesehatan Reproduksi (HKSR)',
+  'Pencegahan Perkawinan Anak',
+  'Kemitraan Strategis',
 ];
 
 export default function Programs() {
@@ -29,7 +33,7 @@ export default function Programs() {
   const [contact, setContact] = useState(initialContact);
 
   // Interactive filters
-  const [selectedCategory, setSelectedCategory] = useState('Semua Program');
+  const [selectedCategory, setSelectedCategory] = useState('Semua Bidang');
   const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
@@ -60,7 +64,7 @@ export default function Programs() {
   };
 
   const filteredPrograms = programs.filter((prog) => {
-    const matchesCategory = selectedCategory === 'Semua Program' || 
+    const matchesCategory = selectedCategory === 'Semua Bidang' || 
       (prog.category && prog.category.toLowerCase().includes(selectedCategory.toLowerCase())) ||
       (selectedCategory.toLowerCase().includes(String(prog.category || '').toLowerCase()));
     
@@ -88,10 +92,10 @@ export default function Programs() {
             <span>Agenda & Program Kerja</span>
           </div>
           <h1 className="text-3xl sm:text-5xl font-black tracking-tight">
-            Program Kerja & Layanan APM Jambi
+            9 Bidang Strategis & Layanan APM Jambi
           </h1>
           <p className="text-slate-300 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-            Rincian 9 pilar aksi nyata pemenuhan hak perempuan, pendampingan hukum, kemandirian ekonomi, serta penguatan pos Community Center di pedesaan.
+            Rincian 9 bidang strategis aksi nyata pemenuhan hak perempuan, pendampingan hukum, kemandirian ekonomi, serta penguatan pos Community Center di pedesaan.
           </p>
 
           {/* Interactive Search Bar in Hero */}
@@ -147,7 +151,7 @@ export default function Programs() {
               Silakan reset kata kunci pencarian atau pilih kategori lain.
             </p>
             <button
-              onClick={() => { setSelectedCategory('Semua Program'); setSearchQuery(''); }}
+              onClick={() => { setSelectedCategory('Semua Bidang'); setSearchQuery(''); }}
               className="px-4 py-2 rounded-xl bg-purple-900 text-white text-xs font-bold"
             >
               Reset Filter
@@ -168,7 +172,7 @@ export default function Programs() {
                 <div className={`lg:col-span-8 space-y-4 ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
                   <div className="flex flex-wrap items-center gap-2.5">
                     <span className="px-3 py-1 rounded-lg bg-purple-100 text-purple-900 font-bold text-xs uppercase tracking-wider">
-                      {program.badge || `Pilar 0${index + 1}`}
+                      {program.badge || `Layanan 0${index + 1}`}
                     </span>
                     <span className="text-xs font-semibold text-slate-500">
                       {program.category}

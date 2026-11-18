@@ -164,10 +164,10 @@ export default function Programs() {
         <div>
           <h1 className="text-2xl font-bold text-slate-900 flex items-center gap-2">
             <ListChecks className="w-6 h-6 text-purple-700" />
-            <span>Manajemen 9 Program & Layanan</span>
+            <span>Manajemen 9 Bidang Strategis & Layanan</span>
           </h1>
           <p className="text-xs text-slate-500 mt-0.5">
-            Atur pilar program kerja, output aktivitas, dan deskripsi layanan publik APM Jambi
+            Atur 9 bidang strategis, output aktivitas, dan deskripsi layanan publik APM Jambi
           </p>
         </div>
         <button 
@@ -341,7 +341,7 @@ export default function Programs() {
                 <div className="space-y-1.5">
                   <label className="block text-xs font-bold text-slate-700">Label / Badge</label>
                   <input 
-                    placeholder="Contoh: Layanan 01, Pilar Advokasi" 
+                    placeholder="Contoh: Layanan 01, Bidang Strategis 01" 
                     value={form.badge || ''} 
                     onChange={(e) => setForm({ ...form, badge: e.target.value })} 
                     className="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-xs text-slate-900 focus:outline-none focus:ring-2 focus:ring-purple-600" 

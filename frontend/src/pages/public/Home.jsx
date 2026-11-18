@@ -312,8 +312,8 @@ export default function Home() {
           </div>
           <div className="p-3 sm:p-4 space-y-1">
             <p className="text-3xl sm:text-4xl font-black text-rose-700">9</p>
-            <p className="text-xs font-bold text-slate-800 uppercase tracking-wider">Pilar Program Kerja</p>
-            <p className="text-[11px] text-slate-400">HKSR, TPKS, PKDRT, & Ekonomi</p>
+            <p className="text-xs font-bold text-slate-800 uppercase tracking-wider">Bidang Strategis</p>
+            <p className="text-[11px] text-slate-400">HKSR, Advokasi, CU, & GEDSI</p>
           </div>
         </div>
       </section>
@@ -423,7 +423,7 @@ export default function Home() {
               <span>Program Kerja & Layanan Komunitas</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-              Pilar Aksi Nyata Pemberdayaan
+              9 Bidang Strategis Pemberdayaan
             </h2>
             <p className="text-slate-500 text-sm max-w-xl">
               Fokus pelayanan dan pengorganisasian APM Jambi untuk mewujudkan hak otonomi perempuan.
@@ -433,7 +433,7 @@ export default function Home() {
             to="/program"
             className="inline-flex items-center gap-2 text-sm font-bold text-purple-900 hover:text-purple-700"
           >
-            <span>Lihat Semua 9 Pilar Program</span>
+            <span>Lihat Semua 9 Bidang Strategis</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
